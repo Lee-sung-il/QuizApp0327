@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/co19level1"
+    tools:context=".QuizLevel1">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="265dp"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:text="Quiz level 1"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="306dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="코로나는 감기 바이너스 이다."
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <Button
+        android:id="@+id/quiz_o"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/quizo"
+        android:textSize="24sp"
+        app:backgroundTint="@color/material_on_primary_disabled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/quiz_x"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/quizx"
+        android:textSize="24sp"
+        app:backgroundTint="@color/material_on_primary_disabled"
+        app:layout_constraintStart_toEndOf="@+id/quiz_o"
+        app:layout_constraintTop_toTopOf="@+id/quiz_o" />
+
+    <Button
+        android:id="@+id/quiz_next"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/quiznext"
+        app:backgroundTint="@color/material_on_primary_disabled"
+        app:layout_constraintEnd_toStartOf="@+id/quiz_home"
+        app:layout_constraintTop_toTopOf="@+id/quiz_home" />
+
+    <Button
+        android:id="@+id/quiz_home"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/quizhome"
+        app:backgroundTint="@color/material_on_primary_disabled"
+        app:layout_constraintStart_toStartOf="@+id/quiz_x"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_x" />
+</androidx.constraintlayout.widget.ConstraintLayout>
